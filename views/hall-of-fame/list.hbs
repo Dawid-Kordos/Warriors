@@ -1,0 +1,21 @@
+<h1 class="article__title">Hall of fame</h1>
+
+<table class="article__table">
+    <thead>
+        <tr class="article__table-row">
+            <th class="article__table-column">#</th>
+            <th class="article__table-column">Name</th>
+            <th class="article__table-column">Wins</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each warriors}}
+            <tr class="article__table-row">
+                <td class="article__table-column">{{this.place}}</td>
+                <td class="article__table-column">{{this.warrior.name}}</td>
+                <td class="article__table-column">{{this.warrior.wins}}</td>
+            </tr>
+        {{/each}}
+    <tbody>
+</table>
+

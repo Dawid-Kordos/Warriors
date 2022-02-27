@@ -1,0 +1,10 @@
+<h1 class="article__title">List of all warriors:</h1>
+<ol class="article__list">
+    {{#each warriors}}
+        <li class="article__item">{{this.name}}
+            <form class="article__form-icon" name="id" action="/warrior/{{this.id}}?_method=delete" method="post" >
+                <button class="article__btn-icon" type="submit"><img src="/graphics/trash.png" alt="trash" class="article__btn-delete"></button>
+            </form>
+        </li>
+    {{/each}}
+</ol>

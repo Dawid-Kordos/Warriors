@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.article-container{
+    min-height: 90vh;
+    background-image: url('/graphics/grey_wash_wall.png');
+}
+
+.warrior-form, .arena-form, .hall-of-fame{
+    text-align: center;
+ }
+
+.warrior-form h2, .arena-form h2, .hall-of-fame h2{
+    padding: 30px;
+}
+
+.warrior-form form, .arena-form form{
+   display: flex;
+   flex-direction: column;
+}
+
+.warrior-form label{
+    margin-right: 20px;
+}
+
+.warrior-form input, .arena-form select{
+    display: block;
+    margin: 5px auto;
+    min-width: 170px;
+    background-color: gainsboro;
+}
+
+.warrior-form button, .arena-form button{
+    padding: 0 4px;
+    margin: 10px auto;
+    min-width: 60px;
+    background-color: gainsboro;
+}
+
+.nav-container{
+    display: flex;
+    height: 10vh;
+    /*padding: 5px;*/
+    background-image: url('/graphics/footer_lodyas.png');
+}
+
+.menu-top{
+    display: flex;
+    flex-basis: 80%;
+    text-align: center;
+
+}
+
+.menu-top a{
+    display: block;
+    min-width: 120px;
+    color: #fff;
+    line-height: 400%;
+    border: solid 1px transparent;
+    transition: .3s;
+    margin: 0 auto;
+}
+
+.menu-top a:hover{
+    border: solid 1px #fff;
+    border-radius: 3px;
+}
+
+.logo{
+    flex-basis: 10%;
+}
+
+.logo a{
+    display: block;
+    position: fixed;
+    left: 10px;
+    top: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border: solid 5px grey;
+    border-radius: 50%;
+}
+
+.nav-hamburger{
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    font-size: 30px;
+    transition: .3s linear;
+    color: white;
+}
+
+.nav-hamburger:hover{
+    cursor: pointer;
+}
+
+th{
+    text-align: center;
+    min-width: 100px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+td{
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-top {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .menu-top a{
+        margin-right: 0;
+    }
+
+    .menu-top a:hover{
+        border: solid 1px transparent;
+        background-color: rgb(48, 48, 48);
+    }
+}

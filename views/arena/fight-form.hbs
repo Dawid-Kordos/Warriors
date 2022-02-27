@@ -1,0 +1,8 @@
+<h1 class="article__title">Choose warriors to fight.</h1>
+<img class="article__img" src="/graphics/arena2.jpg" alt="">
+<form class="article__form" action="/arena/fight" method="POST">
+    {{> warrior-select select-name="warrior1"}}
+    {{> warrior-select select-name="warrior2"}}
+        <button class="article__btn" type="submit">Start your fight!</button>
+</form>
+

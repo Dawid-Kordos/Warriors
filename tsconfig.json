@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true, //typ any nie bedzie sie sam robil
+    "preserveConstEnums": true, //do enum
+    "sourceMap": true, //wskazanie bledu w pliku .ts
+    "target": "ES6",
+    "downlevelIteration": true, //do iterowania
+    "lib": ["dom", "es6", "dom.iterable"],
+    "outDir": "dist", //folder wyjsciowy
+    "experimentalDecorators": true, //do dekoratorow
+    "emitDecoratorMetadata": true, //do dekoratorow
+    "moduleResolution": "Node",  //do typow dla paczek z ikona DT (instalowanie typow)
+    "allowSyntheticDefaultImports": true
+  }
+}

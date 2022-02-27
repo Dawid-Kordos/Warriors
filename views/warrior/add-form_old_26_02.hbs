@@ -1,0 +1,24 @@
+<h2 class="main-article__title">You are registering a new warrior:</h2>
+<form class="main-article__form" action="/warrior" method="POST">
+    <label class="main-article__label">
+        Name:
+        <input class="main-article__input" type="text" name="name" minlength="3" maxlength="50">
+    </label>
+    <label class="main-article__label">
+        Power:
+        <input class="main-article__input" type="number" name="power" value="1" min="1" max="7">
+    </label>
+    <label class="main-article__label">
+        Defence:
+        <input class="main-article__input" type="number" name="defence" value="1" min="1" max="7">
+    </label>
+    <label class="main-article__label">
+        Resistance:
+        <input class="main-article__input" type="number" name="resistance"value="1" min="1" max="7">
+    </label>
+    <label class="main-article__label">
+        Agility:
+        <input class="main-article__input" type="number" name="agility" value="1" min="1" max="7">
+    </label>
+    <button class="main-article__button">Send</button>
+</form>

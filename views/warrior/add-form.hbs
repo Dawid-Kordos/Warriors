@@ -1,0 +1,25 @@
+<h1 class="article__title">You are registering a new warrior:</h1>
+<p class="article__paragraph">(Total sum of all propertis must be equal 10).</p>
+<form class="article__form" action="/warrior" method="POST">
+    <label class="article__label">
+        Name:
+        <input class="article__input" type="text" name="name" minlength="3" maxlength="50">
+    </label>
+    <label class="article__label">
+        Power:
+        <input class="article__input" type="number" name="power" value="1" min="1" max="7">
+    </label>
+    <label class="article__label">
+        Defence:
+        <input class="article__input" type="number" name="defence" value="1" min="1" max="7">
+    </label>
+    <label class="article__label">
+        Resistance:
+        <input class="article__input" type="number" name="resistance"value="1" min="1" max="7">
+    </label>
+    <label class="article__label">
+        Agility:
+        <input class="article__input" type="number" name="agility" value="1" min="1" max="7">
+    </label>
+    <button class="article__btn">Send</button>
+</form>
